@@ -1,7 +1,7 @@
-// import {v2 as cloudinary} from 'cloudinary'
-const cloudinary = require("cloudinary");
-// import fs from "fs";
-const fs = require("fs");
+import {v2 as cloudinary} from 'cloudinary'
+//const cloudinary = require("cloudinary");
+ import fs from "fs";
+//const fs = require("fs");
 
 cloudinary.config({
   cloud_name: "dazmqutip", //process.env.CLOUD_NAME,
@@ -28,7 +28,7 @@ const uploadOnCloudinary = async (localFilePath) => {
   }
 };
 
-// export default uploadOnCloudinary;
-module.exports = {
-  uploadOnCloudinary,
-};
+export default uploadOnCloudinary;
+// module.exports = {
+//   uploadOnCloudinary,
+// };
